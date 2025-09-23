@@ -1,146 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My project</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li class="logo"><a href="#"><i></i>Logo</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Book Now</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="#"><i></i>Logo</a>
+          </li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Book Now</a></li>
+        </ul>
+      </nav>
 
-        <div class="hotel-reservation">
-            <div class="hotel-name">
-                <h3>Hotel Name</h3>
+      <div class="hotel-reservation">
+        <div class="hotel-name">
+          <h3>Hotel Name</h3>
+        </div>
+
+        <div class="checks">
+          <div class="check">
+            <div class="check-in">
+              <div>
+                <label for="check-in">Check In</label>
+              </div>
+              <input type="date" name="check-in" id="check-in" />
             </div>
-
-            <div class="checks">
-                <div class="check">
-                    <div class="check-in">
-                        <div>
-                             <label for="check-in">Check In</label>
-                        </div>
-                        <input type="date" name="check-in" id="check-in">
-                    </div>
-                    <div class="check-in">
-                        <div>
-                            <label for="check-out">Check Out</label>
-
-                        </div>
-                        <input type="date" name="check-out" id="check-out">
-                    </div>
-                </div>
-    
-                <div class="adult-and-kids">
-                    <div class="adults">
-                        <div>
-                            <label for="adults">Adults</label>
-                        </div>
-                        <input type="number" name="adults" id="adults">
-                    </div>
-                    <div class="adults">
-                        <div>
-                            <label for="adults">Kids</label>
-                        </div>
-                        <input type="number" name="kids" id="kids">
-                    </div>
-                </div>
-                <div class="search">
-                    <p>Search availability</p>
-                </div>
+            <div class="check-in">
+              <div>
+                <label for="check-out">Check Out</label>
+              </div>
+              <input type="date" name="check-out" id="check-out" />
             </div>
-            </div>  
+          </div>
+
+          <div class="adult-and-kids">
+            <div class="adults">
+              <div>
+                <label for="adults">Adults</label>
+              </div>
+              <input type="number" name="adults" id="adults" />
+            </div>
+            <div class="adults">
+              <div>
+                <label for="adults">Kids</label>
+              </div>
+              <input type="number" name="kids" id="kids" />
+            </div>
+          </div>
+          <div class="search">
+            <p>Search availability</p>
+          </div>
+        </div>
+      </div>
     </header>
     <section class="fill-rooms">
-        <div class="rooms">
-            <h2>Rooms</h2>
-            <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+      <div class="rooms">
+        <h2>Rooms</h2>
+        <p>
+          Make yourself at home is our slogan. We offer the best beds in the
+          industry. Sleep well and rest well.
+        </p>
+      </div>
+      <div class="input-checks-middle">
+        <div class="fill-check">
+          <div class="label"><label for="check-in">Check In</label></div>
+          <input type="text" placeholder="DD MM YY" />
         </div>
-        <div class="input-checks-middle">
-            <div class="fill-check">
-                <div class="label"><label for="check-in">Check In</label></div>
-                <input type="text" placeholder="DD MM YY">
-            </div>
-            <div class="fill-check">
-                <div class="label"><label for="check-out">Check Out</label></div>
-                <input type="text" placeholder="DD MM YY">
-            </div>
-
-            <div class="fill-check">
-                <div class="label"><label for="adults">Adults</label></div>
-                <input type="number">
-            </div>
-            <div class="fill-check">
-                <div class="label"><label for="kids">Kids</label></div>
-                <input type="number">
-            </div>
-
-            <div class="fill-check">
-                <div class="label"><label for="kids">Search</label></div>
-                <p>Search</p>
-            </div>
+        <div class="fill-check">
+          <div class="label"><label for="check-out">Check Out</label></div>
+          <input type="text" placeholder="DD MM YY" />
         </div>
-        <section class="hotel-images">
-            <div class="img1">
-                <div><img src="IMAGES/image01.jpg"></div>
-                <div>
-                    <h2>Single Room</h2>
-                    <p>From $<sub>99</sub></p>
-                    <p>15m<sup>2</sup></p>
-                </div>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-                <div>
-                    <a href="#">Choose Room</a>
-                </div>
-            </div>
 
-            <div class="img1">
-                <div><img src="IMAGES/image02.jpg"></div>
-                <div>
-                    <h2>Single Room</h2>
-                    <p>From $<sub>99</sub></p>
-                    <p>15m<sup>2</sup></p>
-                </div>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-                <div>
-                    <a href="#">Choose Room</a>
-                </div>
-            </div>
+        <div class="fill-check">
+          <div class="label"><label for="adults">Adults</label></div>
+          <input type="number" />
+        </div>
+        <div class="fill-check">
+          <div class="label"><label for="kids">Kids</label></div>
+          <input type="number" />
+        </div>
 
-            <div class="img1">
-                <div><img src="IMAGES/image03.jpg"></div>
-                <div>
-                    <h2>Single Room</h2>
-                    <p>From $<sub>99</sub></p>
-                    <p>15m<sup>2</sup></p>
-                </div>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-                <div>
-                    <a href="#">Choose Room</a>
-                </div>
-            </div>
-        </section>
+        <div class="fill-check">
+          <div class="label"><label for="kids">Search</label></div>
+          <p>Search</p>
+        </div>
+      </div>
+      <section class="hotel-images">
+        <div class="img1">
+          <div><img src="IMAGES/image01.jpg" /></div>
+          <div>
+            <h2>Single Room</h2>
+            <p>From $<sub>99</sub></p>
+            <p>15m<sup>2</sup></p>
+          </div>
+          <div>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <button>Choose Room</button>
+        </div>
+
+        <div class="img1">
+          <div><img src="IMAGES/image02.jpg" /></div>
+          <div>
+            <h2>Single Room</h2>
+            <p>From $<sub>99</sub></p>
+            <p>15m<sup>2</sup></p>
+          </div>
+          <div>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <button>Choose Room</button>
+        </div>
+
+        <div class="img1">
+          <div><img src="IMAGES/image03.jpg" /></div>
+          <div>
+            <h2>Single Room</h2>
+            <p>From $<sub>99</sub></p>
+            <p>15m<sup>2</sup></p>
+          </div>
+          <div>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <button>Choose Room</button>
+        </div>
     </section>
-</body>
+  </body>
 </html>
