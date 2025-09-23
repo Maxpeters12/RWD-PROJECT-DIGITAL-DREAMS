@@ -12,6 +12,7 @@
   --red: #f44336;
   --white: #fff;
   --background-color: #ccc;
+  --background: #333;
 }
 
 header {
@@ -19,6 +20,11 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 400;
 }
 
 nav {
@@ -97,8 +103,6 @@ ul a {
 }
 
 .rooms h2 {
-  font-size: 24px;
-  font-weight: 300;
   margin-bottom: 15px;
 }
 
@@ -142,38 +146,198 @@ ul a {
   flex-direction: row;
   column-gap: 12px;
   margin-top: 18px;
+  padding: 10px;
 }
 
-.hotel-images > div img{
-    width: 100%;
+.hotel-images > div {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+}
+.hotel-images > div img {
+  width: 100%;
 }
 
-.hotel-images h2{
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 10px;
+.hotel-images h2 {
+  margin-bottom: 10px;
+  padding: 0px 10px;
 }
 
-.hotel-images p, i{
-    font-size: 14px;
-    line-height: 2;
-}
-.hotel-images i{
-    margin-top: 40px;
+.hotel-images p,
+i {
+  font-size: 14px;
+  line-height: 2;
+  padding: 0px 10px;
 
 }
-
-.hotel-images button{
-    background-color: var(--text-color);
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    color: var(--white);
-    border: none;
-    font-weight: 500;
+.hotel-images .icons {
+  margin: 10px;
+  width: 16px;
+  display: flex;
+  gap: 5px;
 }
 
-.hotel-images button:hover{
-    background-color: var(--background-color);
-    color: var(--text-color);
+.hotel-images button {
+  background-color: var(--text-color);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  border: none;
+  font-weight: 500;
+}
+
+.hotel-images button:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* About section */
+.about {
+  width: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  column-gap: 10px
+  
+}
+.about h2 {
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.about .cards {
+  display: flex;
+  vertical-align: middle;
+  margin-top: 18px;
+
+}
+.about img{
+  width: 20px;
+  margin: 2px;
+}
+.map img{
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/* Contact-info */
+.contact-info{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.contact-info img{
+  width: 15px;
+  margin-right: 5px;
+}
+
+.contacts{
+  display: flex;
+}
+
+/* On-demand section */
+.on-demand{
+  text-align: left;
+  font-size: 16px;
+  background-color: var(--red);
+  padding: 20px;
+  color: var(--white);
+  margin: 0px;
+}
+
+/* Hotels */
+.hotel-option{
+  width: 100%;
+}
+
+.hotel-option h2{
+  font-size: 24px;
+  font-weight: 400;
+  margin: 18px 0px;
+}
+
+.hotels img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Offers */
+.offers{
+  background-color: var(--background);
+  color: var(--white);
+  padding: 40px 15px;
+}
+
+.offers:hover{
+  background-color: var(--text-color);
+}
+
+.offers h2, p{
+  margin-bottom: 20px;
+}
+
+.offers label{
+  font-size: 16px;
+}
+
+.offers input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.offers button{
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/* Contact us for questions-section */
+.contact-questions{
+  width: 100%;
+}
+
+.contact-questions h2{
+  margin-top: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.contact-questions p{
+  margin-top: 18px;
+  color: var(--text-color);
+}
+.contact-questions input{
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0px;
+  border: 1px solid var(--background-color);
+}
+
+.contact-questions button{
+  background-color: var(--text-color);
+  border: none;
+  padding: 12px 20px;
+  color: var(--white);
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+footer{
+  background-color: var(--text-color);
+  margin-top: 20px;
+  color: var(--white);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
 }
