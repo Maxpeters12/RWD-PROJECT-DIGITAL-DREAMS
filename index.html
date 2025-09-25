@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My project</title>
     <link rel="stylesheet" href="CSS/style.css" />
-    <iconify-icon icon="mdi:home"></iconify-icon>
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li class="logo">
-            <a href="#"><i></i>Logo</a>
+            <a href="#"><i class="fa-solid fa-bed"></i>Logo</a>
           </li>
           <li><a href="#">Rooms</a></li>
           <li><a href="#">About</a></li>
@@ -20,23 +22,20 @@
           <li><a href="#">Book Now</a></li>
         </ul>
       </nav>
-
       <div class="hotel-reservation">
-        <div class="hotel-name">
-          <h3>Hotel Name</h3>
-        </div>
+          <h3><i class="fa-solid fa-bed"></i>Hotel Name</h3>
 
         <div class="checks">
           <div class="check">
             <div class="check-in">
               <div>
-                <label for="check-in">Check In</label>
+                <i class="fa-duotone fa-solid fa-calendar"></i><label for="check-in">Check In</label>
               </div>
               <input type="date" name="check-in" id="check-in" />
             </div>
             <div class="check-in">
               <div>
-                <label for="check-out">Check Out</label>
+                <i class="fa-duotone fa-solid fa-calendar"></i><label for="check-out">Check Out</label>
               </div>
               <input type="date" name="check-out" id="check-out" />
             </div>
@@ -45,22 +44,23 @@
           <div class="adult-and-kids">
             <div class="adults">
               <div>
-                <label for="adults">Adults</label>
+                <i class="fa-solid fa-child"></i><label for="adults">Adults</label>
               </div>
               <input type="number" name="adults" id="adults" />
             </div>
             <div class="adults">
               <div>
-                <label for="adults">Kids</label>
+                <i class="fa-solid fa-child-reaching"></i><label for="adults">Kids</label>
               </div>
               <input type="number" name="kids" id="kids" />
             </div>
           </div>
           <div class="search">
-            <p>Search availability</p>
+            <button>Search availability</button>
           </div>
         </div>
       </div>
+
     </header>
     <section class="fill-rooms">
       <div class="rooms">
@@ -72,26 +72,26 @@
       </div>
       <div class="input-checks-middle">
         <div class="fill-check">
-          <div class="label"><label for="check-in">Check In</label></div>
+          <div class="label"><i class="fa-duotone fa-solid fa-calendar"></i><label for="check-in">Check In</label></div>
           <input type="text" placeholder="DD MM YY" />
         </div>
         <div class="fill-check">
-          <div class="label"><label for="check-out">Check Out</label></div>
+          <div class="label"><i class="fa-duotone fa-solid fa-calendar"></i><label for="check-out">Check Out</label></div>
           <input type="text" placeholder="DD MM YY" />
         </div>
 
         <div class="fill-check">
-          <div class="label"><label for="adults">Adults</label></div>
+          <div class="label"><i class="fa-solid fa-child"></i><label for="adults">Adults</label></div>
           <input type="number" />
         </div>
         <div class="fill-check">
-          <div class="label"><label for="kids">Kids</label></div>
+          <div class="label"><i class="fa-solid fa-child-reaching"></i><label for="kids">Kids</label></div>
           <input type="number" />
         </div>
 
         <div class="fill-check">
-          <div class="label"><label for="kids">Search</label></div>
-          <p>Search</p>
+          <div class="label"><i class="fa-solid fa-magnifying-glass"></i><label for="kids">Search</label></div>
+          <button>Search</button>
         </div>
       </div>
       <section class="hotel-images">
@@ -100,12 +100,13 @@
           <div>
             <h2>Single Room</h2>
             <p>From $<sub>99</sub></p>
+            <p>Single bed</p>
             <p>15m<sup>2</sup></p>
           </div>
           <div class="icons">
-            <img src="ICONS/Bath-Tub--Streamline-Sharp.png">
-            <img src="ICONS/Phone--Streamline-Sharp-Remix.png">
-            <img src="ICONS/Wifi--Streamline-Sharp-Remix.png">
+            <i class="fa-solid fa-bath"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-wifi"></i>
           </div>
           <button>Choose Room</button>
         </div>
@@ -113,15 +114,16 @@
         <div class="img1">
           <div><img src="IMAGES/image02.jpg" /></div>
           <div>
-            <h2>Single Room</h2>
-            <p>From $<sub>99</sub></p>
-            <p>15m<sup>2</sup></p>
+            <h2>Double Room</h2>
+            <p>From $<sub>149</sub></p>
+            <p>Queen-size bed</p>
+            <p>25m<sup>2</sup></p>
           </div>
           <div class="icons">
-            <img src="ICONS/Bath-Tub--Streamline-Sharp.png">
-            <img src="ICONS/Phone--Streamline-Sharp-Remix.png">
-            <img src="ICONS/Wifi--Streamline-Sharp-Remix.png">
-            <img src="ICONS/Wifi--Streamline-Sharp-Remix.png">
+            <i class="fa-solid fa-bath"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-desktop"></i>
           </div>
           <button>Choose Room</button>
         </div>
@@ -129,16 +131,18 @@
         <div class="img1">
           <div><img src="IMAGES/image03.jpg" /></div>
           <div>
-            <h2>Single Room</h2>
-            <p>From $<sub>99</sub></p>
-            <p>15m<sup>2</sup></p>
+            <h2>Deluxe Room</h2>
+            <p>From $<sub>199</sub></p>
+            <p>King-size bed</p>
+            <p>40m<sup>2</sup></p>
           </div>
           <div class="icons">
-            <img src="ICONS/Bath-Tub--Streamline-Sharp.png">
-            <img src="ICONS/Phone--Streamline-Sharp-Remix.png">
-            <img src="ICONS/Wifi--Streamline-Sharp-Remix.png">
-            <img src="ICONS/Wifi--Streamline-Sharp-Remix.png">
-            <img src="ICONS/Wifi--Streamline-Sharp-Remix.png">
+            <i class="fa-solid fa-bath"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-martini-glass"></i>
+            <i class="fa-solid fa-utensils"></i>
           </div>
           <button>Choose Room</button>
         </div>
@@ -150,10 +154,10 @@
         <div class="cards">
           <p>We accept:</p>
           <div>
-          <img src="ICONS/Credit-Card-1--Streamline-Sharp.png" alt="card">
-          <img src="ICONS/Credit-Card-1--Streamline-Sharp.png" alt="card">
-          <img src="ICONS/Credit-Card-1--Streamline-Sharp.png" alt="card">
-          <img src="ICONS/Credit-Card-1--Streamline-Sharp.png" alt="card">
+            <i class="fa-regular fa-credit-card"></i>
+            <i class="fa-solid fa-credit-card"></i>
+            <i class="fa-solid fa-credit-card"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
           </div>
         </div>
       </div>
@@ -163,30 +167,25 @@
     </section>
     <div class="contact-info">
       <div class="contacts">
-        <img src="ICONS/Phone--Streamline-Sharp-Remix.png">
-        <p>423 Some adr, Chicago, US</p>
+        <p><i class="fa-solid fa-location-dot"></i>423 Some adr, Chicago, US</p>
       </div>
       <div class="contacts">
-        <img src="ICONS/Phone--Streamline-Sharp-Remix.png">
-        <p>Phone: +00 151515</p>
+        <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
       </div>
       <div class="contacts">
-        <img src="ICONS/Phone--Streamline-Sharp-Remix.png">
-        <p>Email: mail@mail.com
-        </p>
+        <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
       </div>
     </div>
 
     <div class="on-demand">
-      <img src="" alt="">
-      <p>On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
+      <p><i class="fa-solid fa-info"></i>On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
     </div>
 
     <section class="hotel-option">
       <h2>Our Hotels</h2>
       <p>You can find our hotels anywhere in the world:
       </p>
-      <div class="hotels-img-one">
+      <div class="hotels">
         <img src="IMAGES/multiplehouses1.jpg" alt="">
         <p>Cinque Terre</p>
       </div>
@@ -223,9 +222,15 @@
       <h2>Contact</h2>
       <p>If you have any questions, do not hesitate to ask them.</p>
       <div class="location">
-        <p> Chicago, US</p>
-        <p>Phone: +00 151515</p>
-        <p>Email: mail@mail.com</p>
+        <p>
+        <i class="fa-solid fa-location-dot"></i>Chicago, US
+        </p>
+        <p>
+        <i class="fa-solid fa-phone"></i>Phone: +00 151515
+        </p>
+        <p>
+        <i class="fa-solid fa-envelope"></i>Email: mail@mail.com
+        </p>
       </div>
       <div>
         <input type="text" placeholder="Name">
@@ -240,12 +245,12 @@
     </section>
     <footer>
       <p>Find Us On</p>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-square-snapchat"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
       <p>Powered by <a href="#">w3.css</a></p>
     </footer>
   </body>

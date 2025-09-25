@@ -22,25 +22,64 @@ header {
   background-size: cover;
 }
 
-h2{
+h2 {
   font-size: 24px;
   font-weight: 400;
 }
 
 nav {
   background-color: #ffffff;
-  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+nav > ul > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
   padding: 10px;
+}
+
+nav > ul > li:first-child,
+li:hover {
+  background-color: red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+
+}
+
+.logo a:first-child {
+  color: var(--white);
+}
+
+nav > ul > li:first-child a:hover{
+  color: var(--text-color);
+}
+
+nav > ul > li:last-child,
+li:hover {
+  background-color: #f3f3f3;
+  height: 100%;
+  display: flex;
+}
+
+nav > ul > li:hover {
+  background-color: gainsboro;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 ul {
   display: flex;
   align-items: center;
   list-style-type: none;
-  column-gap: 1rem;
+  width: 100%;
 }
 
-ul li:last-child {
+ul > li:last-child {
   margin-left: auto;
 }
 
@@ -57,11 +96,12 @@ ul a {
   margin: 210px 15px;
 }
 
+
 .checks {
   padding: 20px;
 }
 
-.hotel-name {
+.hotel-reservation h3 {
   background-color: var(--red);
   color: var(--white);
   font-size: 24px;
@@ -75,21 +115,22 @@ ul a {
 }
 
 .checks input {
-  width: 300px;
+  width: 280px;
   padding: 10px;
   margin-bottom: 18px;
   border: 1px solid var(--background-color);
 }
 
-.search {
+.search button {
   background-color: #555;
   padding: 8px;
   width: 200px;
   text-align: center;
   color: var(--white);
+  border: none;
 }
 
-.search:hover {
+.search button:hover {
   background-color: var(--background-color);
   color: var(--text-color);
   cursor: pointer;
@@ -99,6 +140,10 @@ ul a {
 .fill-rooms {
   background-color: #f3f3f3;
   padding: 15px;
+  width: 100%;
+}
+
+.fill-rooms .input-checks-middle {
   width: 100%;
 }
 
@@ -141,12 +186,24 @@ ul a {
   cursor: pointer;
 }
 
+.fill-check button{
+  width: 100%;
+  padding: 10px 80px;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--white);
+}
+
+.fill-check button:hover{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .hotel-images {
   display: flex;
   flex-direction: row;
   column-gap: 12px;
   margin-top: 18px;
-  padding: 10px;
 }
 
 .hotel-images > div {
@@ -167,7 +224,6 @@ i {
   font-size: 14px;
   line-height: 2;
   padding: 0px 10px;
-
 }
 .hotel-images .icons {
   margin: 10px;
@@ -198,8 +254,7 @@ i {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 2fr 4fr;
-  column-gap: 10px
-  
+  column-gap: 10px;
 }
 .about h2 {
   margin-bottom: 20px;
@@ -213,37 +268,33 @@ i {
   display: flex;
   vertical-align: middle;
   margin-top: 18px;
-
 }
-.about img{
+.about img {
   width: 20px;
   margin: 2px;
 }
-.map img{
+.map img {
   width: 100%;
   margin-top: 10px;
 }
 
-
 /* Contact-info */
-.contact-info{
+.contact-info {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
 }
 
-.contact-info img{
-  width: 15px;
-  margin-right: 5px;
-}
 
-.contacts{
+.contacts {
   display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 /* On-demand section */
-.on-demand{
+.on-demand {
   text-align: left;
   font-size: 16px;
   background-color: var(--red);
@@ -253,77 +304,84 @@ i {
 }
 
 /* Hotels */
-.hotel-option{
+.hotel-option {
   width: 100%;
 }
 
-.hotel-option h2{
+.hotel-option h2 {
   font-size: 24px;
   font-weight: 400;
   margin: 18px 0px;
 }
 
-.hotels img{
+.hotels img {
   width: 100%;
   margin-top: 20px;
 }
 
 /* Offers */
-.offers{
-  background-color: var(--background);
+.offers {
+  background-color: var(--text-color);
+  opacity: 0.65;
   color: var(--white);
   padding: 40px 15px;
 }
 
-.offers:hover{
-  background-color: var(--text-color);
+.offers:hover {
+  opacity: 1;
 }
 
-.offers h2, p{
+.offers h2,
+p {
   margin-bottom: 20px;
 }
 
-.offers label{
+.offers label {
   font-size: 16px;
 }
 
-.offers input{
+.offers input {
   width: 100%;
   padding: 10px;
   border: none;
 }
 
-.offers button{
+.offers button {
   background-color: var(--red);
   border: none;
   color: var(--white);
-  padding: 10px;
+  padding: 10px 18px;
   margin-top: 15px;
 }
 
-/* Contact us for questions-section */
-.contact-questions{
+.offers button:hover{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Contact us for question-section */
+.contact-questions {
   width: 100%;
 }
 
-.contact-questions h2{
+.contact-questions h2 {
   margin-top: 18px;
   font-weight: 400;
   color: var(--text-color);
 }
 
-.contact-questions p{
+.contact-questions p {
   margin-top: 18px;
   color: var(--text-color);
 }
-.contact-questions input{
+.contact-questions input {
   width: 100%;
   padding: 15px;
   margin: 8px 0px;
   border: 1px solid var(--background-color);
 }
 
-.contact-questions button{
+.contact-questions button {
   background-color: var(--text-color);
   border: none;
   padding: 12px 20px;
@@ -333,11 +391,98 @@ i {
   font-size: 16px;
 }
 
-footer{
+.contact-questions button:hover{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer {
   background-color: var(--text-color);
   margin-top: 20px;
   color: var(--white);
   width: 100%;
   padding: 20px;
   text-align: center;
+}
+
+
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .hotel-reservation {
+    margin: 150px 15px;
+  }
+
+  .check,
+  .adult-and-kids,
+  .input-checks-middle {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hotel-images {
+    flex-direction: column;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-images {
+    flex-wrap: wrap;
+  }
+
+  .input-checks-middle {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .hotel-reservation {
+    margin: 150px 15px;
+  }
+
+  .hotel-images {
+    justify-content: center;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* margin: 20px 0px; */
+  }
+  
+  
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
