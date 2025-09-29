@@ -13,6 +13,7 @@
   --white: #fff;
   --background-color: #ccc;
   --background: #333;
+  --hover: #4CAF50;
 }
 
 header {
@@ -102,11 +103,12 @@ ul a {
 }
 .hotel-reservation h3 {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .checks {
   padding: 20px;
+  width: 100%;
 }
 
 .hotel-reservation h3 {
@@ -120,10 +122,11 @@ ul a {
 .adult-and-kids {
   display: flex;
   column-gap: 10px;
+  width: 100%;
 }
 
 .checks input {
-  width: 280px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 18px;
   border: 1px solid var(--background-color);
@@ -155,6 +158,10 @@ ul a {
   width: 100%;
 }
 
+.fill-rooms i{
+  padding-left: 0;
+}
+
 .fill-rooms .input-checks-middle {
   width: 100%;
 }
@@ -172,16 +179,13 @@ ul a {
 .input-checks-middle {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
   column-gap: 1rem;
+  width: 100%;
 }
 
-.input-checks-middle input[type='text'] {
+.input-checks-middle input {
   padding: 10px 60px;
-}
-
-.input-checks-middle input[type='number'] {
-  padding: 10px 30px;
+  width: 100%;
 }
 
 .fill-check p {
@@ -438,6 +442,13 @@ footer {
 footer > p {
   margin: 28px;
 }
+footer a{
+  color: var(--white);
+}
+footer a:hover{
+  color: var(--hover);
+}
+
 
 .socials i {
   font-size: 22px;
