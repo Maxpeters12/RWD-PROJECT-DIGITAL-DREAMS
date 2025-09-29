@@ -119,7 +119,7 @@ ul a {
 .check,
 .adult-and-kids {
   display: flex;
-  gap: 10px;
+  column-gap: 10px;
 }
 
 .checks input {
@@ -127,6 +127,10 @@ ul a {
   padding: 10px;
   margin-bottom: 18px;
   border: 1px solid var(--background-color);
+}
+
+.checks i{
+  padding-left: 0;
 }
 
 .search button {
