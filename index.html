@@ -16,10 +16,10 @@
           <li class="logo">
             <a href="#"><i class="fa-solid fa-bed"></i>Logo</a>
           </li>
-          <li><a href="#">Rooms</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Book Now</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Book Now</a></li>
         </ul>
       </nav>
       <div class="hotel-reservation">
@@ -46,23 +46,23 @@
               <div>
                 <i class="fa-solid fa-child"></i><label for="adults">Adults</label>
               </div>
-              <input type="number" name="adults" id="adults" />
+              <input type="number" name="adults" value="1" id="adults" />
             </div>
             <div class="adults">
               <div>
                 <i class="fa-solid fa-child-reaching"></i><label for="adults">Kids</label>
               </div>
-              <input type="number" name="kids" id="kids" />
+              <input type="number" name="kids" value="0" id="kids" />
             </div>
           </div>
           <div class="search">
-            <button>Search availability</button>
+            <button><i class="fa-solid fa-magnifying-glass"></i>Search availability</button>
           </div>
         </div>
       </div>
 
     </header>
-    <section class="fill-rooms">
+    <section id="rooms" class="fill-rooms">
       <div class="rooms">
         <h2>Rooms</h2>
         <p>
@@ -82,11 +82,11 @@
 
         <div class="fill-check">
           <div class="label"><i class="fa-solid fa-child"></i><label for="adults">Adults</label></div>
-          <input type="number" />
+          <input type="number" value="1" />
         </div>
         <div class="fill-check">
           <div class="label"><i class="fa-solid fa-child-reaching"></i><label for="kids">Kids</label></div>
-          <input type="number" />
+          <input type="number" value="0"/>
         </div>
 
         <div class="fill-check">
@@ -147,7 +147,7 @@
           <button>Choose Room</button>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div>
         <h2>About</h2>
         <p>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -185,25 +185,27 @@
       <h2>Our Hotels</h2>
       <p>You can find our hotels anywhere in the world:
       </p>
-      <div class="hotels">
-        <img src="IMAGES/multiplehouses1.jpg" alt="">
-        <p>Cinque Terre</p>
-      </div>
-      <div class="hotels">
-        <img src="IMAGES/newyork2.jpg" alt="">
-        <p>New York</p>
-      </div>
-      <div class="hotels">
-        <img src="IMAGES/sanfran.jpg" alt="">
-        <p>San Francisco</p>
-      </div>
-      <div class="hotels">
-        <img src="IMAGES/pisa.jpg" alt="">
-        <p>Pisa</p>
-      </div>
-      <div class="hotels">
-        <img src="IMAGES/paris.jpg" alt="">
-        <p>Paris</p>
+      <div class="select-hotel">
+        <div class="hotel first-hotel-image">
+          <img src="IMAGES/multiplehouses1.jpg">
+          <p>Cinque Terre</p>
+        </div>
+        <div class="hotels first-hotel-image" >
+          <img src="IMAGES/newyork2.jpg">
+          <p>New York</p>
+        </div>
+        <div class="hotels first-hotel-image">
+          <img src="IMAGES/sanfran.jpg">
+          <p>San Francisco</p>
+        </div>
+        <div class="hotels first-hotel-image">
+          <img src="IMAGES/pisa.jpg">
+          <p>Pisa</p>
+        </div>
+        <div class="hotels first-hotel-image">
+          <img src="IMAGES/paris.jpg">
+          <p>Paris</p>
+        </div>
       </div>
     </section>
 
@@ -218,7 +220,7 @@
       </div>
       <button>Subscribe</button>
     </section>
-    <section class="contact-questions">
+    <section id="contact" class="contact-questions">
       <h2>Contact</h2>
       <p>If you have any questions, do not hesitate to ask them.</p>
       <div class="location">
@@ -245,12 +247,14 @@
     </section>
     <footer>
       <p>Find Us On</p>
-      <i class="fa-brands fa-square-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-square-snapchat"></i>
-      <i class="fa-brands fa-pinterest-p"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+      <div class="socials">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-snapchat"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
       <p>Powered by <a href="#">w3.css</a></p>
     </footer>
   </body>
